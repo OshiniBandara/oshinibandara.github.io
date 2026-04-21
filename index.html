@@ -114,7 +114,7 @@
     position: relative;
   }
   .hero-photo-frame {
-    position: relative; display: inline-block;
+    position: relative; display: block;
     width: 100%;
   }
   .hero-photo-frame::before {
@@ -127,8 +127,7 @@
   }
   .hero-photo {
     position: relative; z-index: 1;
-    width: 100%; aspect-ratio: 4/5;
-    object-fit: cover; object-position: center top;
+    width: 100%; height: auto;
     border-radius: 2px;
     display: block;
     filter: sepia(8%);
@@ -143,6 +142,7 @@
     font-family: 'DM Mono', monospace;
     font-size: 0.68rem; color: var(--accent);
     letter-spacing: 0.12em; text-transform: uppercase;
+    background: var(--bg);
   }
 
   /* ── Decorative strip ── */
